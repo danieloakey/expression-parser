@@ -35,6 +35,7 @@ unary = ("-" | "!")* application
 application = primary ("(" expr ")")?
 primary = identifier | number | "true" | "false" | string | "(" expr ")"
 identifier = [a-zA-Z_][a-zA-Z0-9_]*
+number = [0-9]+(\.[0-9]*)?
 string = <string in double quotes with backslash escapes>
 ```
 
